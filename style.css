@@ -709,7 +709,7 @@ a {
 }
 .card p {
   height: 180px;
-  overflow-y: scroll;
+  overflow-y: overlay;
 }
 .card h6 {
   font-weight: bold;
@@ -1871,5 +1871,16 @@ iframe {
         background-position: 0 0;
       }
     }
+  }
+}
+@media(max-width:500px){
+  .call,.whatsapp,.mar{
+    display: none;
+  }
+  .fa.fa-phone{
+    font-size: 22px !important;
+  }
+  .fab.fa-whatsapp{
+    font-size: 24px !important;
   }
 }
