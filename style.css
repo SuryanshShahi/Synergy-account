@@ -1906,3 +1906,14 @@ iframe {
 .service-name{
   overflow-y: overlay;
 }
+@media (max-width: 650px) {
+.prev-arrow {
+  display: none !important;
+}
+.next-arrow {
+  display: none !important;
+}
+}
+.service-name{
+  overflow-y: overlay;
+}
