@@ -7,6 +7,9 @@ html {
   width: 3px;
   height: 3px;
 }
+.service-name p::-webkit-scrollbar {
+  width: 0px;
+}
 .testimonialScrollBar::-webkit-scrollbar-track {
   background: rgb(131, 131, 131);
   border-radius: 10px;
@@ -1882,14 +1885,24 @@ iframe {
     }
   }
 }
-@media(max-width:500px){
-  .call,.whatsapp,.mar{
+@media (max-width: 500px) {
+  .call,
+  .whatsapp,
+  .mar {
     display: none;
   }
-  .fa.fa-phone{
+  .fa.fa-phone {
     font-size: 22px !important;
   }
-  .fab.fa-whatsapp{
+  .fab.fa-whatsapp {
     font-size: 24px !important;
   }
+}
+@media (min-width: 990px) {
+.service-name {
+  height: 240px;
+}
+}
+.service-name{
+  overflow-y: overlay;
 }
