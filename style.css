@@ -7,15 +7,16 @@ html {
   width: 3px;
   height: 3px;
 }
-.service-name p::-webkit-scrollbar {
-  width: 0px;
+.ServiceContent::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
 }
-.testimonialScrollBar::-webkit-scrollbar-track {
+.testimonialScrollBar,.ServiceContent::-webkit-scrollbar-track {
   background: rgb(131, 131, 131);
   border-radius: 10px;
 }
 
-.testimonialScrollBar::-webkit-scrollbar-thumb {
+.testimonialScrollBar,.ServiceContent::-webkit-scrollbar-thumb {
   background: rgb(48, 48, 48);
   border-radius: 10px;
 }
@@ -83,10 +84,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-.carousel-control-prev {
-  width: 30px !important;
-  left: 10px !important;
-}
 
 /* custom navbar */
 
@@ -788,10 +785,9 @@ a {
 }
 .carousel-caption {
   position: absolute;
-  text-align: left;
-  left: 5%;
-  width: 50%;
-  top: 30%;
+  left: 0;
+  width: 100%;
+  top: 0;
 }
 
 .banner-head {
@@ -1481,14 +1477,10 @@ iframe {
     font-size: 32px !important;
   }
   .carousel-caption button {
-    width: 70%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 580px) {
-  .carousel-caption {
-    top: 30%;
-    width: 70%;
-  }
   .service-img {
     width: 100%;
     height: 300px;
@@ -1497,8 +1489,9 @@ iframe {
     z-index: 9;
     position: relative;
   }
+
   .carousel-caption button {
-    width: 80%;
+    width: fit-content;
   }
   .contac-form {
     margin-top: 20px;
@@ -1568,9 +1561,9 @@ iframe {
     z-index: 9;
     position: relative;
   }
-  .carousel-control-prev {
+  /* .carousel-control-prev {
     display: none;
-  }
+  } */
   .buttons {
     display: block;
   }
@@ -1898,13 +1891,10 @@ iframe {
     font-size: 24px !important;
   }
 }
-@media (min-width: 990px) {
-.service-name {
-  height: 240px;
+@media (max-width: 760px) {
+.ServiceContent {
+  height: 100% !important;
 }
-}
-.service-name{
-  overflow-y: overlay;
 }
 @media (max-width: 650px) {
 .prev-arrow {
@@ -1914,6 +1904,8 @@ iframe {
   display: none !important;
 }
 }
-.service-name{
+.ServiceContent{
+  height: 225px;
+  overflow-x: hidden;
   overflow-y: overlay;
 }
