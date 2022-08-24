@@ -11,12 +11,21 @@ html {
   width: 3px;
   height: 3px;
 }
-.testimonialScrollBar,.ServiceContent::-webkit-scrollbar-track {
+.testimonialScrollBar::-webkit-scrollbar-track {
   background: rgb(131, 131, 131);
   border-radius: 10px;
 }
 
-.testimonialScrollBar,.ServiceContent::-webkit-scrollbar-thumb {
+.testimonialScrollBar::-webkit-scrollbar-thumb {
+  background: rgb(48, 48, 48);
+  border-radius: 10px;
+}
+.ServiceContent::-webkit-scrollbar-track {
+  background: rgb(131, 131, 131);
+  border-radius: 10px;
+}
+
+.ServiceContent::-webkit-scrollbar-thumb {
   background: rgb(48, 48, 48);
   border-radius: 10px;
 }
